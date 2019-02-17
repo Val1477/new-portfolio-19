@@ -23,6 +23,12 @@
     display: inline-block;
     float:none;
 }
+
+::placeholder {
+  color: #ccbaba;
+  font-weight: 300;
+}
+
 </style>
  
  <body style="background-color: #012044; margin: 0; padding: 0;">
@@ -63,86 +69,17 @@
   </div>
 
 
-<div class="contact-form-wrapper" style="color: white; padding: 13%; padding-top: inherit; margin-top: 46px;">
-<!--Section: Contact v.2-->
-<section class="mb-4">
 
-    <!--Section heading-->
-    <!--Section description-->
-    <p class="text-center w-responsive mx-auto mb-5">If you have any questions , please feel free to email me.</p>
 
-    <div class="row">
 
-        <!--Grid column-->
-        <div class="col-md-12 mb-md-0 mb-5">
-            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
-
-                <!--Grid row-->
-                <div class="row">
-
-                    <!--Grid column-->
-                    <div class="col-md-6">
-                        <div class="md-form mb-0">
-                            <input type="text" id="name" name="name" class="form-control" style="color: white;">
-                            <label for="name" class="" style="color: white;">Your name</label>
-                        </div>
-                    </div>
-                    <!--Grid column-->
-
-                    <!--Grid column-->
-                    <div class="col-md-6">
-                        <div class="md-form mb-0">
-                            <input type="text" id="email" name="email" class="form-control" style="color: white;">
-                            <label for="email" class="" style="color: white;">Your email</label>
-                        </div>
-                    </div>
-                    <!--Grid column-->
-
-                </div>
-                <!--Grid row-->
-
-                <!--Grid row-->
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="md-form mb-0">
-                            <input type="text" id="subject" name="subject" class="form-control" style="color: white;">
-                            <label for="subject" class="" style="color: white;">Subject</label>
-                        </div>
-                    </div>
-                </div>
-                <!--Grid row-->
-
-                <!--Grid row-->
-                <div class="row">
-
-                    <!--Grid column-->
-                    <div class="col-md-12">
-
-                        <div class="md-form">
-                            <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea" style="color: white;"></textarea>
-                            <label for="message" class"" style="color: white;">Your message</label>
-                        </div>
-
-                    </div>
-                </div>
-                <!--Grid row-->
-
-            </form>
-
-            <div class="text-center text-md-center">
-                <a class="btn btn-secondary" onclick="document.getElementById('contact-form').submit();">Send</a>
-            </div>
-            <div class="status"></div>
-        </div>
-        <!--Grid column-->
-
-        <!--Grid column-->
-        
-    </div>
-
-</section>
-<!--Section: Contact v.2-->
-</div>
+<form action="mailto:vfalcone7070@gmail.com" method="post" type="text/plain" id="form" style="text-align: center; margin-top: 10%">
+    <span><input type="name" placeholder="Your Name" style="background-color: transparent; border-right-color: transparent; border-left-color: transparent; border-top-color: transparent; width: 35%; border-bottom: 1px solid white;
+color: white;"/></span>&nbsp;&nbsp;
+    <spam><input type="email" placeholder="Your email" style="background-color: transparent; border-right-color: transparent; border-left-color: transparent; border-top-color: transparent; width: 35%; border-bottom: 1px solid white; color: white;"/><br></span>
+    <input type="subject" placeholder="Subject" style="margin-top: 5%; background-color: transparent; border-right-color: transparent; border-left-color: transparent; border-top-color: transparent; width: 70%; border-bottom: 1px solid white; color: white;"/><br>
+    <input type="message" placeholder="Your Message" style="margin-top: 5%;background-color: transparent; border-right-color: transparent; border-left-color: transparent; border-top: transparent; width: 70%; border-bottom: 1px solid white; color: white;"/><br>
+    <button class="btn btn-secondary" style="margin-top: 2%;">SEND</button>
+</form>
 
 
 <!-- JQuery -->
